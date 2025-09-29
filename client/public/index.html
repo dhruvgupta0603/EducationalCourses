@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educational Courses</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .hero-bg {
+            background-image: url('https://source.unsplash.com/1600x900/?education,learning');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <header class="bg-blue-600 text-white p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Educational Courses</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#home" class="hover:underline">Home</a></li>
+                    <li><a href="#courses" class="hover:underline">Courses</a></li>
+                    <li><a href="#about" class="hover:underline">About</a></li>
+                    <li><a href="#contact" class="hover:underline">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto">
+        <!-- Hero Section -->
+        <section id="home" class="hero-bg text-white text-center py-32">
+            <h2 class="text-5xl font-bold mb-4">Learn Anytime, Anywhere</h2>
+            <p class="text-lg mb-6">Join millions of learners and explore a variety of courses to enhance your skills.</p>
+            <a href="#courses" class="bg-blue-600 text-white px-8 py-3 rounded-lg shadow-lg hover:bg-blue-700">Explore Courses</a>
+        </section>
+
+        <!-- Courses Section -->
+        <section id="courses" class="my-16">
+            <h2 class="text-3xl font-bold mb-6 text-center">Our Popular Courses</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white p-4 shadow-md rounded-lg hover:shadow-lg transition">
+                    <img src="https://source.unsplash.com/300x200/?coding,programming" alt="Course 1" class="rounded-t-lg">
+                    <h3 class="text-xl font-bold mt-4">Introduction to Programming</h3>
+                    <p class="text-sm mt-2">Learn the basics of programming with this beginner-friendly course.</p>
+                    <a href="#" class="text-blue-600 hover:underline mt-4 block">Learn More</a>
+                </div>
+                <div class="bg-white p-4 shadow-md rounded-lg hover:shadow-lg transition">
+                    <img src="https://source.unsplash.com/300x200/?data,science" alt="Course 2" class="rounded-t-lg">
+                    <h3 class="text-xl font-bold mt-4">Data Science Essentials</h3>
+                    <p class="text-sm mt-2">Advance your skills with our intermediate-level data science course.</p>
+                    <a href="#" class="text-blue-600 hover:underline mt-4 block">Learn More</a>
+                </div>
+                <div class="bg-white p-4 shadow-md rounded-lg hover:shadow-lg transition">
+                    <img src="https://source.unsplash.com/300x200/?business,management" alt="Course 3" class="rounded-t-lg">
+                    <h3 class="text-xl font-bold mt-4">Business Management</h3>
+                    <p class="text-sm mt-2">Master your expertise with our advanced business management course.</p>
+                    <a href="#" class="text-blue-600 hover:underline mt-4 block">Learn More</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="text-center py-16 bg-gray-200 rounded-lg">
+            <h2 class="text-3xl font-bold mb-4">About Us</h2>
+            <p class="text-lg">We are dedicated to providing high-quality educational content to help you achieve your goals.</p>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="my-16">
+            <h2 class="text-3xl font-bold mb-6 text-center">Contact Us</h2>
+            <form class="bg-white p-6 shadow-md rounded-lg max-w-lg mx-auto">
+                <div class="mb-4">
+                    <label for="name" class="block text-sm font-bold mb-2">Name</label>
+                    <input type="text" id="name" class="w-full border border-gray-300 p-2 rounded" placeholder="Your Name">
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-sm font-bold mb-2">Email</label>
+                    <input type="email" id="email" class="w-full border border-gray-300 p-2 rounded" placeholder="Your Email">
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-sm font-bold mb-2">Message</label>
+                    <textarea id="message" class="w-full border border-gray-300 p-2 rounded" placeholder="Your Message"></textarea>
+                </div>
+                <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="bg-blue-600 text-white text-center p-4">
+        <div class="container mx-auto">
+            <p>&copy; 2025 Educational Courses. All rights reserved.</p>
+            <div class="flex justify-center space-x-4 mt-2">
+                <a href="#" class="hover:underline">Privacy Policy</a>
+                <a href="#" class="hover:underline">Terms of Service</a>
+                <a href="#" class="hover:underline">Help</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
